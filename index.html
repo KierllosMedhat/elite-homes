@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/icons8-home-cloud-16.png" type="image/x-icon">
+    <title>EliteHomes - Your Dream Home Awaits</title>
+</head>
+<body>
+    <header>
+        <section id="home" class="container-fluid text-center text-white p-5 mt-5">
+            <h1 class="fw-bold">Find Your Dream Home</h1>
+            <p class="fs-5">Discover exceptional properties in prime locations. From modern condos to luxury estates, we help you find the perfect place to call home.</p>
+            <form class="bg-white text-dark p-4 rounded-4 m-5">
+                <label for="location" class="form-label">Location</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa fa-location-dot text-secondary"></i></span>
+                    <input type="text" class="form-control" name="loaction" aria-describedby="loaction" placeholder="Enter city, neighborhood, or ZIP code">
+                </div>
+                <div class="mb-3">
+                    <label for="property-type" class="form-label">Property Type</label>
+                    <select name="property-type" id="property-type" class="form-select">
+                        <option value="all-types" selected>All Types</option>
+                        <option value="house">House</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Condo">Condo</option>
+                        <option value="Townhouse">Townhouse</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="price-range" class="form-label">Price Range</label>
+                    <select name="price-range" id="price-range" class="form-select">
+                        <option value="any-price" selected>Any Price</option>
+                        <option value="0-to-500k">$0 - $500K</option>
+                        <option value="500k-to-1m">$500 - $1M</option>
+                        <option value="1m-to-2m">$1M - $2M</option>
+                        <option value="2m+">$2M+</option>
+                    </select>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label for="bedrooms" class="form-label">Bedrooms</label>
+                        <select name="bedrooms" id="bedrooms" class="form-select">
+                            <option value="any" selected>Any</option>
+                            <option value="+1">+1</option>
+                            <option value="+2">+2</option>
+                            <option value="+3">+3</option>
+                            <option value="+4">+4</option>
+                            <option value="+5">+5</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="bathrooms" class="form-label">Bathrooms</label>
+                        <select name="bathrooms" id="bathrooms" class="form-select">
+                            <option value="any" selected>Any</option>
+                            <option value="+1">+1</option>
+                            <option value="+2">+2</option>
+                            <option value="+3">+3</option>
+                            <option value="+4">+4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label for="min-sq-ft" class="form-label">Min Sq Ft</label>
+                        <input type="number" class="form-control" name="min-sq-ft" id="min-sq-ft" placeholder="1,000">
+                    </div>
+                    <div class="col-6">
+                        <label for="max-sq-ft" class="form-label">Max Sq Ft</label>
+                        <input type="number" class="form-control" name="max-sq-ft" id="max-sq-ft" placeholder="5,000">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-custom mb-3 w-100 p-3 fs-5">
+                    <i class="fa fa-magnifying-glass"></i>
+                    Search Properties
+                </button>
+            </form>
+            <div class="d-flex justify-content-around">
+            <div>
+                <div>
+                    <h2 class="fw-bold m-0">15,000+</h2>
+                    <p>Active Listings</p>
+                </div>
+                <div>
+                    <h2 class="fw-bold m-0">500+</h2>
+                    <p>Expert Agents</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2 class="fw-bold m-0">98%</h2>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div>
+                    <h2 class="fw-bold m-0">25</h2>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <nav></nav>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
