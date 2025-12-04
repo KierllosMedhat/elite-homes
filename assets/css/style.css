@@ -55,6 +55,12 @@
     --color-white: #fff;
 }
 
+html, 
+body {
+    box-sizing: border-box;
+    font-family: 'EXO', sans-serif;
+}
+
 .btn-custom {
     background-image: linear-gradient(var(--color-purple-600));
     color: white;
@@ -65,14 +71,218 @@
     color: white;
 }
 
+.btn-custom-light {
+    color: var(--color-violet-600);
+    background-color: var(--color-violet-100);
+}
+
+.btn-custom-light:hover {
+    color: var(--color-violet-600);
+    background-color: var(--color-violet-200);
+}
+
+
+
+.bg-light-gray-custom {
+    background-color: var(--color-gray-50);
+}
+
+.fs-custom-sm {
+    font-size: 0.8rem;
+}
+
+
+.text-color-custom {
+    color: var(--color-violet-700)
+}
+
+.h-color-custom {
+    color: #0000;
+    background-image: linear-gradient(90deg,var(--color-violet-600),var(--color-amber-500));
+    background-clip: text;
+}
+
+.custom-title {
+    position: relative;
+}
+
+.custom-title::after {
+    content: "";
+    width: 4rem;
+    height: 0.2rem;
+    background-image: linear-gradient(90deg, var(--color-violet-700), rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: calc(100% + 0.5rem);
+
+}
+
+.custom-title::before {
+    content: "";
+    width: 4rem;
+    height: 0.2rem;
+    background-image: linear-gradient(270deg, var(--color-violet-700), rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: calc(100% + 0.5rem);
+
+}
 /* ! START HOME */
 #home {
     background-image: linear-gradient(to right, #4d179acc, #59168bcc), url(/assets/images/hero-bg-img.png);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #home h1 {
     font-size: 3rem;
 }
+
+nav .property img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    align-self: center;
+}
+
+nav .property {
+    font-size: 0.7rem;
+}
+
+nav .property h3 {
+    font-size: 0.8rem;
+}
+
+nav .property:hover {
+    cursor: pointer;
+    background-color: var(--color-gray-200) !important;
+    transition-duration: 0.5s;
+}
+
+nav .property-type:hover span {
+    cursor: pointer;
+    color: var(--color-purple-700);
+}
+
+.pop-loaction-1 {
+    background-image: linear-gradient(to right, #4d179acc, #59168bcc),url(/assets/images/new-york.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.pop-loaction-2 {
+    background-image: linear-gradient(to right, #4d179acc, #59168bcc),url(/assets/images/los-angeles.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.pop-loaction-3 {
+    background-image: linear-gradient(to right, #4d179acc, #59168bcc),url(/assets/images/miami.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.properties-dropdown {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#home form {
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .properties-dropdown {
+        width: 70%;
+    }
+
+    #home form {
+        width: 60%;
+    }
+}
+
+.icon-purple {
+    box-sizing: content-box;
+    background-color: var(--color-purple-100);
+    color: var(--color-purple-700);
+}
+
+.icon-green {
+    box-sizing: content-box;
+    background-color: var(--color-green-50);
+    color: var(--color-green-700);
+}
+
+.icon-violet {
+    box-sizing: content-box;
+    background-color: var(--color-violet-100);
+    color: var(--color-violet-700);
+}
+
+.resource-card:hover {
+    cursor: pointer;
+}
 /* ! END HOME */
+
+/* ! START PROPERTIES */
+.photos-tag {
+    color: white;
+    background-color: color-mix(in oklab,var(--color-black)70%,transparent);
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.tag {
+    color: white;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.purple-tag {
+    background-color: var(--color-violet-600);
+}
+
+
+.green-tag {
+    background-color: var(--color-green-600);
+}
+
+
+.heart-tag {
+    background-color: var(--color-gray-100);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.3rem;
+}
+
+.heart-tag:hover i{
+    cursor: pointer;
+    color: var(--color-red-500) !important;
+}
+
+.card {
+    max-height: 32rem;
+}
+
+.card:hover .property-img {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.property-img:hover {
+    cursor: pointer;
+}
+
+.strick-through {
+    text-decoration: line-through;
+}
+/* ! END PROPERTIES */
