@@ -81,7 +81,94 @@ body {
     background-color: var(--color-violet-200);
 }
 
+.bg-light-violet {
+    background-color: var(--color-violet-50) !important;
+}
 
+.bg-violet {
+    background-color: var(--color-violet-100) !important;
+}
+
+.text-violet {
+    color: var(--color-violet-600) !important;
+}
+
+.border-violet {
+    border-color: var(--color-violet-600) !important;
+}
+
+.btn-violet {
+    background-color: var(--color-violet-600);
+    color: white;
+}
+
+.bg-green {
+    background-color: var(--color-green-100) !important;
+}
+
+.text-green {
+    color: var(--color-green-600) !important;
+}
+
+.border-green {
+    border-color: var(--color-green-600) !important;
+}
+
+.btn-green {
+    background-color: var(--color-green-600);
+    color: white;
+}
+
+.bg-purple {
+    background-color: var(--color-purple-100) !important;
+}
+
+.text-purple {
+    color: var(--color-purple-600) !important;
+}
+
+.border-purple {
+    border-color: var(--color-purple-600) !important;
+}
+
+.btn-purple {
+    background-color: var(--color-purple-600);
+    color: white;
+}
+
+.bg-yellow {
+    background-color: var(--color-yellow-100) !important;
+}
+
+.text-yellow {
+    color: var(--color-yellow-600) !important;
+}
+
+.border-yellow {
+    border-color: var(--color-yellow-600) !important;
+}
+
+.btn-yellow {
+    background-color: var(--color-yellow-600);
+    color: white;
+}
+
+.bg-indigo {
+    background-color: var(--color-indigo-100) !important;
+}
+
+.text-indigo {
+    color: var(--color-indigo-600) !important;
+}
+
+.border-indigo {
+    border-color: var(--color-indigo-600) !important;
+}
+
+.btn-indigo {
+    background-color: var(--color-indigo-600);
+    color: white;
+}
 
 .bg-light-gray-custom {
     background-color: var(--color-gray-50);
@@ -286,3 +373,35 @@ nav .property-type:hover span {
     text-decoration: line-through;
 }
 /* ! END PROPERTIES */
+
+/* ! START SERVICES */
+
+.nav-link {
+    --bs-nav-link-color: var(--color-gray-600);
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    --bs-nav-tabs-border-width: 2px;
+}
+
+.nav-link:hover {
+    --bs-nav-tabs-link-hover-border-color: var(--color-violet-200);
+    --bs-nav-link-hover-color: var(--color-violet-600);
+}
+
+.active {
+    --bs-nav-tabs-link-active-bg: var(--color-violet-100);
+    --bs-nav-tabs-link-active-color: var(--color-violet-600);
+    --bs-nav-tabs-link-active-border-color: var(--color-violet-600);
+}
+
+.service-card-tag {
+    bottom: -1rem;
+    left: -1rem;
+}
+
+.service-card-tag-right {
+    bottom: -1rem;
+    right: -1rem;
+}
+/* ! END SERVICES */
