@@ -85,6 +85,10 @@ body {
     background-color: var(--color-violet-50) !important;
 }
 
+.bg-solid-violet {
+    background-image: linear-gradient(var(--color-violet-900),var(--color-violet-900));
+}
+
 .bg-violet {
     background-color: var(--color-violet-100) !important;
 }
@@ -193,6 +197,10 @@ body {
     position: relative;
 }
 
+.custom-title-gold {
+     position: relative;
+}
+
 .custom-title::after {
     content: "";
     width: 4rem;
@@ -202,7 +210,17 @@ body {
     top: 50%;
     transform: translatey(-50%);
     left: calc(100% + 0.5rem);
+}
 
+.custom-title-gold::after {
+    content: "";
+    width: 4rem;
+    height: 0.2rem;
+    background-image: linear-gradient(90deg, var(--color-amber-500), rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: calc(100% + 0.5rem);
 }
 
 .custom-title::before {
@@ -214,8 +232,19 @@ body {
     top: 50%;
     transform: translatey(-50%);
     right: calc(100% + 0.5rem);
-
 }
+
+.custom-title-gold::before {
+    content: "";
+    width: 4rem;
+    height: 0.2rem;
+    background-image: linear-gradient(270deg, var(--color-amber-500), rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: calc(100% + 0.5rem);
+}
+
 /* ! START HOME */
 #home {
     background-image: linear-gradient(to right, #4d179acc, #59168bcc), url(/assets/images/hero-bg-img.png);
@@ -405,3 +434,11 @@ nav .property-type:hover span {
     right: -1rem;
 }
 /* ! END SERVICES */
+
+/* ! START TESTMONIALS */
+.carousel-indicators [data-bs-target]{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+/* ! END TESTMONIALS */
