@@ -442,3 +442,12 @@ nav .property-type:hover span {
     border-radius: 100%;
 }
 /* ! END TESTMONIALS */
+
+/* ! START FAQ */
+
+.accordion-button {
+    --bs-accordion-active-bg: var(--color-white); 
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+/* ! END FAQ */
