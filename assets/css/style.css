@@ -52,7 +52,7 @@
     --color-gray-800: oklch(27.8% .033 256.848);
     --color-gray-900: oklch(21% .034 264.665);
     --color-black: #000;
-    --color-white: #fff;
+    --color-white: rgb(255, 255, 255);
 }
 
 html, 
@@ -86,7 +86,7 @@ body {
 }
 
 .bg-solid-violet {
-    background-image: linear-gradient(var(--color-violet-900),var(--color-violet-900));
+    background-image: linear-gradient(var(--color-violet-600),var(--color-violet-900));
 }
 
 .bg-violet {
@@ -123,6 +123,10 @@ body {
     color: white;
 }
 
+.bg-solid-purple {
+    background-color: var(--color-purple-600) !important;
+}
+
 .bg-purple {
     background-color: var(--color-purple-100) !important;
 }
@@ -140,6 +144,14 @@ body {
     color: white;
 }
 
+.bg-gradient-pink {
+    background-image: linear-gradient(135deg,var(--color-fuchsia-500),var(--color-amber-500));
+}
+
+.text-pink {
+    color: var(--color-fuchsia-500);
+}
+
 .bg-yellow {
     background-color: var(--color-yellow-100) !important;
 }
@@ -155,6 +167,10 @@ body {
 .btn-yellow {
     background-color: var(--color-yellow-600);
     color: white;
+}
+
+.bg-solid-indigo {
+    background-color: var(--color-indigo-700);
 }
 
 .bg-indigo {
@@ -182,6 +198,9 @@ body {
     font-size: 0.8rem;
 }
 
+.fs-custom-xl {
+    font-size: 3rem;
+}
 
 .text-color-custom {
     color: var(--color-violet-700)
@@ -451,3 +470,27 @@ nav .property-type:hover span {
 }
 
 /* ! END FAQ */
+
+/* ! START CONTACT */
+
+.contact-card:hover {
+    transform: translate(0.0rem, -0.5rem);
+    border: 2px solid var(--color-violet-400);
+    transition-duration: 0.5s;
+    i {
+        scale: 1.05;
+    }
+}
+
+.icon-custom {
+    background-color: rgba(255, 255, 255, 0.268);
+    transition-duration: 0.5s;
+}
+
+.icon-custom:hover {
+    cursor: pointer;
+    scale: 1.05;
+    background-color: rgba(255, 255, 255, 0.529);
+}
+
+/* ! END CONTACT */
